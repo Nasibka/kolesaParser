@@ -1,0 +1,11 @@
+{
+  "environment": "staging",
+  "db": "mongodb+srv://user:******@carfast-staging.4guh6.mongodb.net/parser-kolesa?retryWrites=true&w=majority",
+  "getFreeCarsCrone": "*/5 * * * *",
+  "getPaidCarsCrone": "*/5 * * * *",
+  "proxyLogin":"******",
+  "proxyPass":"******",
+  "paidMaxViews":5,
+  "freeMaxViews":5,
+  "useProxy":false
+}

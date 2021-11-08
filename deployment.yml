@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carfast.service.parser.kolesa
+spec:
+  selector:
+    matchLabels:
+      app: carfast.service.parser.kolesa
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: carfast.service.parser.kolesa
+    spec:
+      containers:
+        - name: service-parser-kolesa
+          image: {{image}}
+          env:
+            - name: ENVIRONMENT
+              value: {{environment}}
+      imagePullSecrets:
+        - name: myregistrykey

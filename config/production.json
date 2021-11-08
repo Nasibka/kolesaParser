@@ -1,0 +1,11 @@
+{
+  "environment": "production",
+  "db": "mongodb+srv://root:******@carfast.xpd1d.mongodb.net/parser-kolesa?retryWrites=true&w=majority",
+  "getFreeCarsCrone": "* * * * *",
+  "getPaidCarsCrone": "* * * * *",
+  "proxyLogin":"******",
+  "proxyPass":"******",
+  "paidMaxViews":5,
+  "freeMaxViews":5,
+  "useProxy":true
+}
